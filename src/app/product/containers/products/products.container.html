@@ -1,0 +1,9 @@
+
+<div class="product-list">
+  <app-product
+    *ngFor="let product of products; index as i"
+    [product]="product"
+    (productClicked)="clickProduct($event)"
+  ></app-product>
+</div>
+<a mat-raised-button routerLink="/products/create">Crear un nuevo producto</a>

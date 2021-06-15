@@ -1,0 +1,16 @@
+nav > a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav > a.active {
+    background-color:#eeeeee;
+    border-radius: 5px;
+}
+
+.header-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

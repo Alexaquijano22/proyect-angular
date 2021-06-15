@@ -1,0 +1,15 @@
+<div *ngIf="(product$ | async) as product">
+  <div>
+    <img [src]="product.image" alt="" />
+  </div>
+  <div>
+    <ul>
+      <li>Tipo: {{ product.title }}</li>
+      <li>Precio: {{ product.price | currency }}</li>
+    </ul>
+    <p>Descripción: {{ product.description }}</p>
+  </div>
+  <button (click)="createProduct()">crear</button>
+  <button mat-raised-button [routerLink]="['/products/edit', product.id]" (click)="updateProduct()">Editar</button>
+  <button (click)="deleteProduct()">Eliminar</button>
+</div>

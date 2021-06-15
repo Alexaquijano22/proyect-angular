@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <div class="header-row">
+    <nav>
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/products" routerLinkActive="active">Productos</a>
+      <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+    </nav>
+    <button routerLink="/order" mat-icon-button [matBadge]="total$ | async">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
